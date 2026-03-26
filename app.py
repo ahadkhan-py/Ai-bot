@@ -7,7 +7,7 @@ import os
 load_dotenv()
 
 app = Flask(__name__)
-client = Groq(api_key=os.getenv("Groq_API_KEY"))
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 # Store conversation history for each user
 conversation_histories = {}
